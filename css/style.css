@@ -1,0 +1,580 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #444;
+}
+
+:root {
+    --white: #fff;
+    --blue: #1C48C1;
+    --light-blue: #18AEF2;
+    --green: #007A88;
+    --dark-green: #005888;
+    --navy: #002488;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.inner {
+    margin-bottom: 100px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+/* セクションタイトル */
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    h2 {
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 60px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 400;
+    }
+}
+
+
+/* ---------------------------------------------------
+PC
+--------------------------------------------------- */
+
+/* --------------------------------ヘッダー */
+.header-wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 98;
+    background-color: var(--white);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ヘッダーロゴ */
+h1 {
+    margin-left: calc(15px + 85 * ((100vw - 375px) / 1065));
+    /* (最小値 + (最大値と最小値の差) * (現在の画面幅から最小幅を引いた値) / 画面幅の差) */
+
+    .header-logo {
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+    }
+}
+
+/* メニュー */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+
+    a {
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        display: block;
+        padding: 15px 25px;
+        transition-duration: .4s;
+
+        &:hover {
+            background-color: #ddd;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 12px;
+        }
+    }
+}
+
+.nav-contact-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0 25px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+    border-radius: 30px;
+    transition-duration: .4s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    img {
+        width: 24px;
+    }
+
+    h2 {
+        color: var(--white);
+        font-size: 16px;
+    }
+}
+
+
+
+/* ハンバーガーメニュー */
+.hamburger {
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 99;
+    display: none;
+    transition-duration: .5s;
+
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    img {
+        display: none;
+    }
+
+    .menu-open {
+        color: var(--white);
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 0.32em;
+        margin-top: 5px;
+    }
+
+    .menu-close {
+        display: none;
+    }
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    margin: 10px auto;
+}
+
+.hamburger span:nth-child(3) {
+    top: 0;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.hamburger.active img {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.hamburger.active .menu-open {
+    display: none;
+}
+
+.hamburger.active .menu-close {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.3em;
+    background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hamburger.active span:nth-child(1) {
+    display: none;
+}
+
+.hamburger.active span:nth-child(2) {
+    display: none;
+}
+
+.hamburger.active span:nth-child(3) {
+    display: none;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header-nav.active {
+    transform: translate(0);
+}
+
+
+
+/* --------------------------------メインビジュアル */
+.main-visual {
+    background-image: url(/images/mv-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 80px;
+}
+
+.main-visual-content {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 100px 0;
+
+    h2 {
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* 60px→30px */
+        font-size: clamp(1.875rem, 1.215rem + 2.82vw, 3.75rem);
+        margin-bottom: 50px;
+    }
+
+    > p {
+        font-size: clamp(1rem, 0.89rem + 0.47vw, 1.313rem);
+        margin-bottom: 50px;
+    }
+}
+
+.mv-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    a {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contact,
+    .service {
+        padding: 15px 25px;
+        border: 2px solid;
+        border-radius: 40px;
+        background-color: var(--white);
+        transition-duration: .4s;
+
+        &:hover {
+            color: var(--white);
+        }
+    }
+
+    .contact {
+        color: var(--blue);
+
+        &:hover {
+            background-color: var(--blue);
+        }
+    }
+
+    .service {
+        color: var(--light-blue);
+
+        &:hover {
+            background-color: var(--light-blue);
+        }
+    }
+}
+
+/* ボタンの矢印デザイン */
+.dli-chevron-round-right {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 0.6em;
+    height: 0.6em;
+    transform: translateX(-25%) rotate(45deg);
+}
+
+.dli-chevron-round-right::before,
+.dli-chevron-round-right::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+}
+
+.dli-chevron-round-right::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.15em;
+}
+
+.dli-chevron-round-right::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.15em;
+}
+
+
+/* --------------------------------特徴 */
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.back-text {
+        color: #eee;
+        font-size: 240px;
+        font-weight: 600;
+        font-family: "Oswald", sans-serif;
+        position: absolute;
+        top: -130px;
+        right: 0;
+    }
+
+.feature-content {
+    position: relative;
+}
+
+.flexibility {
+    margin-top: 80px;
+}
+
+.reliability {
+    margin-top: 160px;
+}
+
+
+.feature-group {
+    position: relative;
+    top: 0;
+
+    .feature-number {
+        color: var(--white);
+        font-size: 12px;
+        transform: rotate(90deg);
+        border-top: 1px solid var(--white);
+        padding-top: 10px;
+        position: absolute;
+        top: -400px;
+        left: -10px;
+    }
+
+    .feature-text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 30px 30px 60px;
+        color: var(--white);
+
+        .feature-title {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 30px;
+
+            p {
+                font-size: 16px;
+            }
+
+            h5 {
+                font-size: 21px;
+                border-bottom: 1px solid var(--white);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------ヘッダー */
+/* ヘッダーメニューの切り替え */
+@media screen and (max-width: 1280px) {
+
+    .header-inner {
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        height: 80px;
+    }
+
+    /* ヘッダーロゴ */
+    h1 {
+        .header-logo {
+            background: linear-gradient(#fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+        }
+    }
+
+    .nav,
+    .nav-contact-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 15px;
+        top: 0;
+        transition-duration: .5s;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+}
+
+
+
+/* ---------------------------------------------------
+SP
+--------------------------------------------------- */
+@media screen and (max-width: 767px) {
+    .inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .heading {
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+
+        h2 {
+            font-size: 45px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+
+
+    /* --------------------------------メインビジュアル */
+    .main-visual-content {
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .mv-btn {
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+
+        .contact {
+            margin: 0 auto;
+        }
+    }
+
+
+    /* --------------------------------特徴 */
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .back-text {
+        display: none;
+    }
+
+    .flexibility {
+        margin-top: 50px;
+    }
+
+    .reliability {
+        margin-top: 50px;
+    }
+
+    .feature-group {
+
+        .feature-number {
+            top: -350px;
+        }
+    }
+
+}
