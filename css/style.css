@@ -57,6 +57,7 @@ ul, li {
     align-items: center;
     gap: 30px;
     margin-bottom: 50px;
+    padding-top: 50px;
 
     h2 {
         background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
@@ -128,7 +129,7 @@ h1 {
         transition-duration: .4s;
 
         &:hover {
-            background-color: #ddd;
+            background-color: #f0f8ff;
         }
 
         h2 {
@@ -300,7 +301,7 @@ h1 {
     }
 
     .contact,
-    .service {
+    .detail {
         padding: 15px 25px;
         border: 2px solid;
         border-radius: 40px;
@@ -320,7 +321,7 @@ h1 {
         }
     }
 
-    .service {
+    .detail {
         color: var(--light-blue);
 
         &:hover {
@@ -434,6 +435,223 @@ h1 {
 
 
 /* --------------------------------選ばれる理由 */
+.reason {
+    background-image: url(/images/reason-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reason-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reason-content {
+    width: 360px;
+    min-width: 360px;
+    height: 360px;
+    min-height: 360px;
+    border-radius: 50%;
+    padding: 66px 50px;
+    display: grid;
+    place-content: center;
+
+    img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    h4 {
+        font-size: 21px;
+        letter-spacing: 0.05%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.custom {
+    margin-top: 180px;
+    border: 1px solid #25C6EA;
+
+    h4 {
+        color: #25C6EA;
+    }
+}
+
+.responsive {
+    border: 1px solid #2599EA;
+
+    h4 {
+        color: #2599EA;
+    }
+}
+
+.support {
+    margin-top: 180px;
+    border: 1px solid #007488;
+
+    h4 {
+        color: #007488;
+    }
+}
+
+.reason-img {
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/* --------------------------------サービス */
+.service {
+    background-image: url(/images/service-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-container {
+    display: flex;
+    padding-bottom: 50px;
+
+    .center {
+        margin-top: 200px;
+        margin-left: -50px;
+    }
+
+    .right {
+        margin-top: 400px;
+        margin-left: -50px;
+    }
+}
+
+.service-content {
+    background-color: var(--white);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 460px;
+    height: 350px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 122, 136, 1);
+
+    .service-number {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        border-radius: 50%;
+        color: var(--white);
+        display: grid;
+        place-content: center;
+        font-size: 21px;
+        margin: 0 auto 5px;
+    }
+
+    h4 {
+        font-size: 25px;
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        padding: 0 70px;
+    }
+}
+
+
+/* --------------------------------導入事例 */
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+    display: none;
+
+    p {
+        color: var(--green);
+    }
+}
+
+.casestudy-container {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0 15px;
+    position: relative;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > img {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+    }
+}
+
+.casestudy-content {
+    border: 1px solid var(--green);
+    max-width: 450px;
+    margin: 0 30px;
+}
+
+.icon-title {
+    text-align: center;
+
+    img {
+        margin: 0 auto;
+    }
+
+    h4 {
+        color: var(--white);
+        background-color: var(--green);
+        padding: 10px;
+        width: fit-content;
+        margin: 0 auto 15px;
+    }
+}
+
+.casestudy-group {
+    padding: 15px;
+
+    .casestudy-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        h5 {
+            color: var(--white);
+            padding: 10px;
+            border-radius: 50%;
+            min-width: 52px;
+            height: 52px;
+            font-weight: normal;
+            display: grid;
+            place-content: center;
+        }
+    }
+}
+
+.assignment {
+    background-color: var(--green);
+}
+
+.solution {
+    background-color: var(--dark-green);
+}
+
+.results {
+    background-color: var(--navy);
+}
+
+
+
+
 
 
 
@@ -579,6 +797,32 @@ SP
         .feature-number {
             top: -350px;
         }
+    }
+
+
+    /* --------------------------------選ばれる理由 */
+    .reason-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .reason-content {
+        padding: 33px 50px;
+    }
+
+    .custom {
+        margin-top: 0;
+    }
+
+    .support {
+        margin-top: 0;
+    }
+
+    .reason-img {
+        display: block;
+        margin: auto;
+        padding-bottom: 50px;
     }
 
 }

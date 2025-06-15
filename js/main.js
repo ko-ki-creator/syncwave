@@ -11,3 +11,12 @@ $(function () {
         $("#js-nav").removeClass("active");
     });
 });
+
+$('.casestudy-container').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    initialSlide: true,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+});

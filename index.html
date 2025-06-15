@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playball&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -100,7 +104,7 @@
                             <p class="contact-btn">今すぐお問い合わせ</p>
                             <span class="dli-chevron-round-right contact-arrow"></span>
                         </a>
-                        <a href="#" class="service">
+                        <a href="#" class="detail">
                             <p class="service-btn">サービスを詳しく見る</p>
                             <span class="dli-chevron-round-right service-arrow"></span>
                         </a>
@@ -110,7 +114,7 @@
         </section>
 
         <!-- 特徴 -->
-        <section class="feature">
+        <section class="feature" id="feature">
             <div class="wrapper">
                 <div class="inner">
                     <div class="heading">
@@ -170,12 +174,243 @@
         </section>
 
         <!-- 選ばれる理由 -->
-        <section class="reason">
+        <section class="reason" id="reason">
             <div class="wrapper">
                 <div class="inner">
                     <div class="heading">
                         <h2>REASON</h2>
                         <h3>SyncWaveが選ばれる理由</h3>
+                    </div>
+                    <div class="reason-container">
+                        <div class="reason-content custom">
+                            <img src="images/reason-custom.png" alt="">
+                            <h4>カスタムソリューション</h4>
+                            <p>
+                                クライアントのビジネス課題に応じた、完全にカスタマイズされたソリューションを提供し、業務の効率化や収益の最大化を実現します。
+                            </p>
+                        </div>
+                        <div class="reason-content responsive">
+                            <img src="images/reason-responsive.png" alt="">
+                            <h4>多業界対応力</h4>
+                            <p>
+                                製造業から金融業、ヘルスケアまで、幅広い業界のプロジェクト経験を活かし、業界特有のニーズに応じたソリューションを提供します。
+                            </p>
+                        </div>
+                        <div class="reason-content support">
+                            <img src="images/reason-support.png" alt="">
+                            <h4>アフターサポート</h4>
+                            <p>
+                                導入後の運用サポートや定期的なメンテナンスを通じて、クライアントが安心してビジネスを進められる環境を提供します。
+                            </p>
+                        </div>
+                    </div>
+                    <img class="reason-img" src="images/reason-img.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- サービス -->
+        <section class="service" id="service">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="heading">
+                        <h2>SERVICE</h2>
+                        <h3>私たちが提供するサービス</h3>
+                    </div>
+                    <div class="service-container">
+                        <div class="service-group">
+                            <div class="service-content">
+                                <div class="service-number">01</div>
+                                <h4>Webアプリケーション</h4>
+                                <p>
+                                    企業の業務プロセスを最適化し、効率を高めるためのカスタムWebアプリケーションを提供します。使いやすさと拡張性を両立させたアプリケーションで、ビジネスの成長をサポートします。
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-number">04</div>
+                                <h4>AI/機械学習ソリューション</h4>
+                                <p>
+                                    ビジネスデータを活用して、AIと機械学習による予測分析や自動化を導入。競争力を強化し、ビジネスの未来を予測します。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-group center">
+                            <div class="service-content">
+                                <div class="service-number">02</div>
+                                <h4>モバイルアプリ</h4>
+                                <p>
+                                    モバイルファーストの時代に対応し、iOSおよびAndroid向けの高機能で直感的なモバイルアプリを開発。ユーザーエクスペリエンスを最優先に考えた設計です。
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-number">05</div>
+                                <h4>データベース管理</h4>
+                                <p>
+                                    信頼性が高く、パフォーマンスに優れたデータベース管理サービスを提供。データの整合性と安全性を確保し、ビジネスの意思決定をサポートします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-group right">
+                            <div class="service-content">
+                                <div class="service-number">03</div>
+                                <h4>クラウドソリューション</h4>
+                                <p>
+                                    AWS、Azure、Google Cloudを活用し、スケーラブルでコスト効果の高いクラウドソリューションを構築。データのセキュリティと可用性を最大限に高めます。
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-number">06</div>
+                                <h4>サイバーセキュリティ</h4>
+                                <p>
+                                    企業のデジタル資産を保護するための包括的なサイバーセキュリティ対策を提供。不正アクセスやデータ漏洩からシステムを守ります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 導入事例 -->
+        <section class="casestudy">
+            <div class="casestudy-wrapper">
+                <div class="casestudy-inner">
+                    <div class="heading wrapper">
+                        <h2>CASE STUDY</h2>
+                        <h3>導入事例 - 成功へ軌跡</h3>
+                    </div>
+                    <div class="scroll">
+                        <p>scroll</p>
+                        <img src="images/case-study-scroll-icon.svg" alt="">
+                    </div>
+                    <div class="casestudy-container">
+                        <img src="images/casestudy-white-gradation.png" alt="">
+                        <div class="casestudy-content">
+                            <img src="images/casestudy-img1.png" alt="">
+                            <div class="icon-title">
+                                <img src="images/casestudy-icon1.png" alt="">
+                                <h4>業務プロセスの効率化</h4>
+                            </div>
+                            <div class="casestudy-group">
+                                <div class="casestudy-item">
+                                    <h5 class="assignment">課題</h5>
+                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="solution">解決</h5>
+                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="results">成果</h5>
+                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="casestudy-content">
+                            <img src="images/casestudy-img2.png" alt="">
+                            <div class="icon-title">
+                                <img src="images/casestudy-icon2.png" alt="">
+                                <h4>グローバルECサイト構築</h4>
+                            </div>
+                            <div class="casestudy-group">
+                                <div class="casestudy-item">
+                                    <h5 class="assignment">課題</h5>
+                                    <p>既存のECサイトが海外市場に対応しておらず、拡張が必要。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="solution">解決</h5>
+                                    <p>多言語対応のECサイトをゼロから設計し、グローバル展開を支援。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="results">成果</h5>
+                                    <p>海外売上が50%増加し、顧客層の拡大に成功。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="casestudy-content">
+                            <img src="images/casestudy-img3.png" alt="">
+                            <div class="icon-title">
+                                <img src="images/casestudy-icon3.png" alt="">
+                                <h4>モバイルアプリの再設計</h4>
+                            </div>
+                            <div class="casestudy-group">
+                                <div class="casestudy-item">
+                                    <h5 class="assignment">課題</h5>
+                                    <p>既存のアプリが使いにくく、ユーザー離脱率が高い。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="solution">解決</h5>
+                                    <p>UI/UXの全面的な見直しと機能改善を実施。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="results">成果</h5>
+                                    <p>ユーザーエンゲージメントが40%向上、アプリのレビュー評価が4.7に上昇。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="casestudy-content">
+                            <img src="images/casestudy-img4.png" alt="">
+                            <div class="icon-title">
+                                <img src="images/casestudy-icon4.png" alt="">
+                                <h4>業務プロセスの効率化</h4>
+                            </div>
+                            <div class="casestudy-group">
+                                <div class="casestudy-item">
+                                    <h5 class="assignment">課題</h5>
+                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="solution">解決</h5>
+                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="results">成果</h5>
+                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="casestudy-content">
+                            <img src="images/casestudy-img5.png" alt="">
+                            <div class="icon-title">
+                                <img src="images/casestudy-icon5.png" alt="">
+                                <h4>業務プロセスの効率化</h4>
+                            </div>
+                            <div class="casestudy-group">
+                                <div class="casestudy-item">
+                                    <h5 class="assignment">課題</h5>
+                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="solution">解決</h5>
+                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="results">成果</h5>
+                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="casestudy-content">
+                            <img src="images/casestudy-img6.png" alt="">
+                            <div class="icon-title">
+                                <img src="images/casestudy-icon6.png" alt="">
+                                <h4>業務プロセスの効率化</h4>
+                            </div>
+                            <div class="casestudy-group">
+                                <div class="casestudy-item">
+                                    <h5 class="assignment">課題</h5>
+                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="solution">解決</h5>
+                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                </div>
+                                <div class="casestudy-item">
+                                    <h5 class="results">成果</h5>
+                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
