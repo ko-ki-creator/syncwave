@@ -15,8 +15,9 @@ $(function () {
 $('.casestudy-container').slick({
     autoplay: true,
     autoplaySpeed: 2000,
-    initialSlide: true,
-    arrows: true,
+    infinite: true,
+    initialSlide: 1,
     slidesToShow: 3,
     slidesToScroll: 1,
+    rows: 1
 });

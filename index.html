@@ -10,10 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playball&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- slickのCSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -70,10 +74,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="nav-contact-btn">
+                    <a href="#contact-form" class="nav-contact-btn">
                         <img src="images/send-icon.png" alt="">
                         <h2>お問い合わせ</h2>
-                    </button>
+                    </a>
                     <div class="hamburger" id="js-hamburger">
                         <span></span>
                         <span></span>
@@ -272,7 +276,7 @@
         </section>
 
         <!-- 導入事例 -->
-        <section class="casestudy">
+        <section class="casestudy" id="casestudy">
             <div class="casestudy-wrapper">
                 <div class="casestudy-inner">
                     <div class="heading wrapper">
@@ -284,7 +288,7 @@
                         <img src="images/case-study-scroll-icon.svg" alt="">
                     </div>
                     <div class="casestudy-container">
-                        <img src="images/casestudy-white-gradation.png" alt="">
+                        <!-- <img src="images/casestudy-white-gradation.png" alt=""> -->
                         <div class="casestudy-content">
                             <img src="images/casestudy-img1.png" alt="">
                             <div class="icon-title">
@@ -415,9 +419,251 @@
                 </div>
             </div>
         </section>
+
+        <!-- 主要取引先 -->
+        <section class="clients" id="clients">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="heading">
+                        <h2>CLIENTS</h2>
+                        <h3>主要取引先</h3>
+                    </div>
+                    <div class="clients-container">
+                        <ul class="clients-list">
+                            <li class="clients-itme"><img src="images/clients-logo1.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo2.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo3.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo4.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo5.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo6.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo7.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo8.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo9.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo10.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo11.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo12.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo13.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo14.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo15.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo16.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo17.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo18.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo19.png" alt=""></li>
+                            <li class="clients-itme"><img src="images/clients-logo20.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新情報 -->
+        <section class="topics" id="topics">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="heading">
+                        <h2>TOPICS</h2>
+                        <h3>最新情報 - 今注目のトピックス</h3>
+                    </div>
+                    <div class="topics-container">
+                        <div class="topics-content">
+                            <div class="topics-date">
+                                <time>2025.03.22</time>
+                                <p class="press-release">プレスリリース</p>
+                            </div>
+                            <img src="images/topics1.png" alt="">
+                            <h4>SyncWaveが新たなAIソリューションをリリース</h4>
+                        </div>
+                        <div class="topics-content">
+                            <div class="topics-date">
+                                <time>2025.03.21</time>
+                                <p class="blog">ブログ</p>
+                            </div>
+                            <img src="images/topics2.png" alt="">
+                            <h4>業界初！SyncWave、最先端のクラウドセキュリティシステムを導入</h4>
+                        </div>
+                        <div class="topics-content">
+                            <div class="topics-date">
+                                <time>2025.03.20</time>
+                                <p class="news">ニュース</p>
+                            </div>
+                            <img src="images/topics3.png" alt="">
+                            <h4>SyncWaveがXYZ社との大型プロジェクトを完了</h4>
+                        </div>
+                        <div class="topics-content">
+                            <div class="topics-date">
+                                <time>2025.03.19</time>
+                                <p class="blog">ブログ</p>
+                            </div>
+                            <img src="images/topics4.png" alt="">
+                            <h4>新しいオフィスを開設し、さらなる成長を目指す</h4>
+                        </div>
+                        <div class="topics-content">
+                            <div class="topics-date">
+                                <time>2025.03.18</time>
+                                <p class="blog">ブログ</p>
+                            </div>
+                            <img src="images/topics5.png" alt="">
+                            <h4>CEOインタビュー - SyncWaveの未来とビジョン</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section class="contact-form" id="contact-form">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="heading">
+                        <h2>CONTACT</h2>
+                        <h3>お問い合わせフォーム</h3>
+                    </div>
+                    <div class="contact-flex">
+                        <div class="overview">
+                            <img src="images/contact-img.png" alt="">
+                            <p>
+                                SyncWaveのサービスに関するご質問やご相談は、以下のフォームからお気軽にお問い合わせください。担当者が迅速に対応いたします。
+                            </p>
+                        </div>
+                        <div class="form">
+                            <div class="form-inner">
+                                <p>※ 必須</p>
+                                <form>
+                                    <div class="form-container">
+                                        <div class="form-content">
+                                            <p class="required">お名前</p>
+                                            <label for="name" class="name">
+                                                <input type="text" name="name" class="form-text" placeholder="姓" required>
+                                                <input type="text" name="name" class="form-text" placeholder="名" required>
+                                            </label>
+                                        </div>
+                                        <div class="form-content">
+                                            <p class="required">貴社名</p>
+                                            <label for="company">
+                                                <input type="text" name="company" class="form-text" placeholder="株式会社SyncWave" required>
+                                            </label>
+                                        </div>
+                                        <div class="form-content">
+                                            <p class="required">メールアドレス</p>
+                                            <label for="email">
+                                                <input type="email" name="email" class="form-text" placeholder="company@example.co.jp" required>
+                                            </label>
+                                        </div>
+                                        <div class="form-content">
+                                            <p>電話番号</p>
+                                            <label for="tel">
+                                                <input type="tel" name="tel" class="form-text" placeholder="000-0000-0000" required>
+                                            </label>
+                                        </div>
+                                        <div class="form-content">
+                                            <p class="required">お問い合わせ内容</p>
+                                            <textarea name="textarea"></textarea>
+                                        </div>
+                                        <div class="submit-btn">
+                                            <button type="submit">お問い合わせを送信</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 会社概要 -->
+        <section class="company" id="company">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="heading">
+                        <h2>COMPANY</h2>
+                        <h3>会社概要 - SyncWaveについて</h3>
+                    </div>
+                    <div class="company-container">
+                        <img src="images/company-img.png" alt="">
+                        <table>
+                            <tr>
+                                <th>設立年</th>
+                                <td>2010年設立。<br>以来、テクノロジーの進化と共に成長を続けています。</td>
+                            </tr>
+                            <tr>
+                                <th>所在地</th>
+                                <td>東京都渋谷区◯◯町1-2-3</td>
+                            </tr>
+                            <tr>
+                                <th>代表者</th>
+                                <td>代表取締役社長　山田太郎</td>
+                            </tr>
+                            <tr>
+                                <th>従業員数</th>
+                                <td>約150名<br>（2024年）</td>
+                            </tr>
+                            <tr>
+                                <th>事業内容</th>
+                                <td>
+                                    Webアプリケーション<br>
+                                    モバイルアプリ<br>
+                                    クラウドソリューション<br>
+                                    AI/機械学習ソリューション<br>
+                                    データベース管理<br>
+                                    サイバーセキュリティ
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ミッション</th>
+                                <td>クライアントのビジネスに革新をもたらし、持続可能な成長を実現することを目指しています。</td>
+                            </tr>
+                            <tr>
+                                <th>ビジョン</th>
+                                <td>技術革新を通じて、社会に貢献し、次世代のビジネスを支えるリーダーとなる。</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer-inner">
+                    <h2>
+                        <a href="#" class="footer-logo">SyncWave</a>
+                    </h2>
+                    <div class="footer-about">
+                        <p>東京都渋谷区◯◯町1-2-3</p>
+                        <p>000-0000-0000</p>
+                        <p>info@syncwave.co.jp</p>
+                        <div class="footer-sns">
+                            <a href=""><img src="images/footer-linkedin.png" alt=""></a>
+                            <a href=""><img src="images/footer-facebook.png" alt=""></a>
+                            <a href=""><img src="images/footer-x.png" alt=""></a>
+                        </div>
+                    </div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#feature">SyncWaveの特徴</a></li>
+                            <li><a href="#reason">選ばれる理由</a></li>
+                            <li><a href="#service">事業内容</a></li>
+                            <li><a href="#casestudy">導入事例</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#clients">パートナー企業</a></li>
+                            <li><a href="#topics">最新情報</a></li>
+                            <li><a href="#contact-form">お問い合わせ</a></li>
+                            <li><a href="#company">会社情報</a></li>
+                        </ul>
+                    </nav>
+                    <div class="other">
+                        <div><a href="">プライバシーポリシー</a></div>
+                        <div><a href="">利用規約</a></div>
+                    </div>
+                </div>
+                <p class="copyright">©︎ 2025 SyncWave All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 

@@ -14,6 +14,7 @@ body {
     --green: #007A88;
     --dark-green: #005888;
     --navy: #002488;
+    --red: #C91F1F;
 }
 
 button {
@@ -578,9 +579,8 @@ h1 {
 .casestudy-container {
     display: flex;
     margin-bottom: 50px;
-    padding: 0 15px;
     position: relative;
-    overflow: scroll;
+    /* overflow: scroll; */
 
     &::-webkit-scrollbar {
         display: none;
@@ -651,6 +651,275 @@ h1 {
 
 
 
+/* --------------------------------主要取引先 */
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0;
+}
+
+
+/* --------------------------------最新情報 */
+.topics {
+    background-image: url(/images/topics-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.topics-container {
+    background-color: var(--white);
+}
+
+.topics-content {
+    display: flex;
+    gap: 50px;
+    padding: 25px 80px;
+    border-bottom: 1px solid #DDDDDD;
+
+    h4 {
+        font-size: 21px;
+        letter-spacing: 0.05em;
+        width: 500px;
+        font-weight: 500;
+    }
+}
+
+.topics-date {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 245px;
+
+    time {
+        padding-top: 5px;
+    }
+
+    p {
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+}
+
+.press-release {
+    background-color: #9CD6FF;
+}
+
+.blog {
+    background-color: #BBF3FF;
+}
+
+.news {
+    background-color: #C7E6FF;
+}
+
+
+/* --------------------------------お問い合わせフォーム */
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview {
+    width: 50%;
+
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+.form {
+    width: 45%;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+.form-inner {
+
+    > p {
+        color: var(--red);
+        text-align: right;
+    }
+}
+
+.form-content {
+    margin-bottom: 30px;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.required::after {
+    content: '※';
+    color: var(--red);
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.name {
+    display: flex;
+    gap: 20px;
+}
+
+.form-text {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEE;
+    padding-left: 10px;
+
+    &::placeholder {
+        color: #AAA;
+    }
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEE;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.submit-btn {
+    width: fit-content;
+    margin: auto;
+
+    button {
+        color: var(--white);
+        background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+        padding: 10px 60px 10px 30px;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-image: url(/images/contact-send-icon.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            transition: all 3s;
+        }
+    }
+}
+
+
+/* --------------------------------会社概要 */
+.company-container {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+table {
+    width: 45%;
+    border-collapse: collapse;
+
+    tr {
+        border-bottom: 1px solid #DDD;
+
+        th,
+        td {
+            padding: 20px 0;
+        }
+
+        th {
+            width: 128px;
+            text-align: left;
+            font-weight: 500;
+        }
+    }
+}
+
+
+/* --------------------------------フッター */
+.footer {
+    background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 100px;
+}
+
+/* フッターロゴ */
+h2 {
+
+    .footer-logo {
+        color: var(--white);
+        font-size: 60px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+    }
+}
+
+.footer-about {
+    color: var(--white);
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.footer-sns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+    border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    padding: 0 80px;
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            color: var(--white);
+        }
+    }
+}
+
+.other {
+
+    div {
+        margin-bottom: 10px;
+
+        a {
+            color: var(--white);
+        }
+    }
+}
+
+.copyright {
+    color: var(--white);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    padding: 10px 0;
+}
 
 
 
