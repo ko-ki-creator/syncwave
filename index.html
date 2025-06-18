@@ -10,661 +10,685 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playball&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <!-- slickのCSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="header-wrapper">
-            <div class="header-inner">
-                <h1>
-                    <a href="#" class="header-logo">SyncWave</a>
-                </h1>
-                <div class="nav-container">
-                    <nav class="nav">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a href="#feature">
-                                    <h2>特徴</h2>
-                                    <p>FEATURE</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#reason">
-                                    <h2>選ばれる理由</h2>
-                                    <p>REASON</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#service">
-                                    <h2>サービス</h2>
-                                    <p>SERVICE</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#casestudy">
-                                    <h2>導入事例</h2>
-                                    <p>CASE STUDY</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#clients">
-                                    <h2>パートナー企業</h2>
-                                    <p>CLIENTS</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#topics">
-                                    <h2>最新情報</h2>
-                                    <p>TOPICS</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#company">
-                                    <h2>会社概要</h2>
-                                    <p>COMPANY</p>
-                                </a>
-                            </li>
+    <div class="wrap">
+        <header>
+            <div class="header-wrapper">
+                <div class="header-inner">
+                    <h1>
+                        <a href="#" class="header-logo">SyncWave</a>
+                    </h1>
+                    <div class="nav-container">
+                        <nav class="nav">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a href="#feature">
+                                        <h2>特徴</h2>
+                                        <p>FEATURE</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#reason">
+                                        <h2>選ばれる理由</h2>
+                                        <p>REASON</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#service">
+                                        <h2>サービス</h2>
+                                        <p>SERVICE</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#casestudy">
+                                        <h2>導入事例</h2>
+                                        <p>CASE STUDY</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#clients">
+                                        <h2>パートナー企業</h2>
+                                        <p>CLIENTS</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#topics">
+                                        <h2>最新情報</h2>
+                                        <p>TOPICS</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#company">
+                                        <h2>会社概要</h2>
+                                        <p>COMPANY</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="#contact-form" class="nav-contact-btn">
+                            <img src="images/send-icon.png" alt="">
+                            <h2>お問い合わせ</h2>
+                        </a>
+                        <div class="hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <img src="images/arrow-back-sp.png" alt="">
+                            <p class="menu-open">MENU</p>
+                            <p class="menu-close">close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item"><a href="#features">特徴</a></li>
+                            <li class="nav-item"><a href="#reason">選ばれる理由</a></li>
+                            <li class="nav-item"><a href="#service">サービス</a></li>
+                            <li class="nav-item"><a href="#casestudy">導入事例</a></li>
+                            <li class="nav-item"><a href="#clients">パートナー企業</a></li>
+                            <li class="nav-item"><a href="#topics">最新情報</a></li>
+                            <li class="nav-item"><a href="#company">会社情報</a></li>
                         </ul>
                     </nav>
-                    <a href="#contact-form" class="nav-contact-btn">
-                        <img src="images/send-icon.png" alt="">
-                        <h2>お問い合わせ</h2>
-                    </a>
-                    <div class="hamburger" id="js-hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <img src="images/arrow-back-sp.png" alt="">
-                        <p class="menu-open">MENU</p>
-                        <p class="menu-close">close</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="main-visual">
-            <div class="inner">
-                <div class="main-visual-content">
-                    <h2>
-                        未来を共に創る<br>
-                        革新的なITソリューション
-                    </h2>
-                    <p>
-                        ビジネスの課題を解決するための最先端技術を、<br>
-                        私たちと共に活用しましょう
-                    </p>
-                    <div class="mv-btn">
-                        <a href="#" class="contact">
-                            <p class="contact-btn">今すぐお問い合わせ</p>
-                            <span class="dli-chevron-round-right contact-arrow"></span>
+                    <div class="nav-sns">
+                        <a href="https://jp.linkedin.com/">
+                            <img src="images/nav-linkedin.png" alt="">
                         </a>
-                        <a href="#" class="detail">
-                            <p class="service-btn">サービスを詳しく見る</p>
-                            <span class="dli-chevron-round-right service-arrow"></span>
+                        <a href="https://www.facebook.com/?locale=ja_JP">
+                            <img src="images/nav-facebook.png" alt="">
+                        </a>
+                        <a href="https://jp.linkedin.com/">
+                            <img src="images/nav-x.png" alt="">
                         </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 特徴 -->
-        <section class="feature" id="feature">
-            <div class="wrapper">
+        </header>
+
+        <main>
+            <section class="main-visual">
                 <div class="inner">
-                    <div class="heading">
-                        <h2>FEATURE</h2>
-                        <h3>SyncWaveの特徴</h3>
+                    <div class="main-visual-content">
+                        <h2>
+                            未来を共に創る<br>
+                            革新的なITソリューション
+                        </h2>
+                        <p>
+                            ビジネスの課題を解決するための最先端技術を、<br class="pc">
+                            私たちと共に活用しましょう
+                        </p>
+                        <div class="mv-btn">
+                            <a href="#" class="contact">
+                                <p class="contact-btn">今すぐお問い合わせ</p>
+                                <span class="dli-chevron-round-right contact-arrow"></span>
+                            </a>
+                            <a href="#" class="detail">
+                                <p class="service-btn">サービスを詳しく見る</p>
+                                <span class="dli-chevron-round-right service-arrow"></span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="feature-container">
-                        <div class="back-text">FEATURE</div>
-                        <div class="feature-content">
-                            <img src="images/feature1.png" alt="">
-                            <div class="feature-group">
-                                <p class="feature-number">FEATURE 01</p>
-                                <div class="feature-text">
-                                    <div class="feature-title">
-                                        <p>#1</p>
-                                        <h5>技術力</h5>
+                </div>
+            </section>
+
+            <!-- 特徴 -->
+            <section class="feature" id="feature">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>FEATURE</h2>
+                            <h3>SyncWaveの特徴</h3>
+                        </div>
+                        <div class="feature-container">
+                            <div class="back-text">FEATURE</div>
+                            <div class="feature-content">
+                                <img src="images/feature1.png" alt="">
+                                <div class="feature-group">
+                                    <p class="feature-number">FEATURE 01</p>
+                                    <div class="feature-text">
+                                        <div class="feature-title">
+                                            <p>#1</p>
+                                            <h5>技術力</h5>
+                                        </div>
+                                        <p>
+                                            独創的な機会を設計・製作でき、人類に貢献するエンジニア・研究者の育成を目指しており、卒業後は機会に関わるあらゆる分野への就職実績があります。
+                                        </p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="feature-content flexibility">
+                                <img src="images/feature2.png" alt="">
+                                <div class="feature-group">
+                                    <p class="feature-number">FEATURE 02</p>
+                                    <div class="feature-text">
+                                        <div class="feature-title">
+                                            <p>#2</p>
+                                            <h5>柔軟性</h5>
+                                        </div>
+                                        <p>
+                                            SyncWaveでは、どんなに複雑なプロジェクトでも、柔軟なアプローチで対応します。クライアントのニーズを深く理解し、その期待を超える成果を約束します。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-content reliability">
+                                <img src="images/feature3.png" alt="">
+                                <div class="feature-group">
+                                    <p class="feature-number">FEATURE 03</p>
+                                    <div class="feature-text">
+                                        <div class="feature-title">
+                                            <p>#3</p>
+                                            <h5>信頼性</h5>
+                                        </div>
+                                        <p>
+                                            私たちが手掛けたプロジェクトの成功は、クライアントとの深い信頼関係によって支えられています。プロジェクト完了後も、長期的なパートナーシップを築き続けています。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 選ばれる理由 -->
+            <section class="reason" id="reason">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>REASON</h2>
+                            <h3>SyncWaveが選ばれる理由</h3>
+                        </div>
+                        <div class="reason-container">
+                            <div class="reason-content custom">
+                                <img src="images/reason-custom.png" alt="">
+                                <h4>カスタムソリューション</h4>
+                                <p>
+                                    クライアントのビジネス課題に応じた、完全にカスタマイズされたソリューションを提供し、業務の効率化や収益の最大化を実現します。
+                                </p>
+                            </div>
+                            <div class="reason-content responsive">
+                                <img src="images/reason-responsive.png" alt="">
+                                <h4>多業界対応力</h4>
+                                <p>
+                                    製造業から金融業、ヘルスケアまで、幅広い業界のプロジェクト経験を活かし、業界特有のニーズに応じたソリューションを提供します。
+                                </p>
+                            </div>
+                            <div class="reason-content support">
+                                <img src="images/reason-support.png" alt="">
+                                <h4>アフターサポート</h4>
+                                <p>
+                                    導入後の運用サポートや定期的なメンテナンスを通じて、クライアントが安心してビジネスを進められる環境を提供します。
+                                </p>
+                            </div>
+                        </div>
+                        <img class="reason-img" src="images/reason-img.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- サービス -->
+            <section class="service" id="service">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>SERVICE</h2>
+                            <h3>私たちが提供するサービス</h3>
+                        </div>
+                        <div class="service-container">
+                            <div class="service-group service-above">
+                                <div class="service-content">
+                                    <div class="service-number">01</div>
+                                    <h4>Webアプリケーション</h4>
                                     <p>
-                                        独創的な機会を設計・製作でき、人類に貢献するエンジニア・研究者の育成を目指しており、卒業後は機会に関わるあらゆる分野への就職実績があります。
+                                        企業の業務プロセスを最適化し、効率を高めるためのカスタムWebアプリケーションを提供します。使いやすさと拡張性を両立させたアプリケーションで、ビジネスの成長をサポートします。
+                                    </p>
+                                </div>
+                                <div class="service-content center">
+                                    <div class="service-number">02</div>
+                                    <h4>モバイルアプリ</h4>
+                                    <p>
+                                        モバイルファーストの時代に対応し、iOSおよびAndroid向けの高機能で直感的なモバイルアプリを開発。ユーザーエクスペリエンスを最優先に考えた設計です。
+                                    </p>
+                                </div>
+                                <div class="service-content right">
+                                    <div class="service-number">03</div>
+                                    <h4>クラウドソリューション</h4>
+                                    <p>
+                                        AWS、Azure、Google Cloudを活用し、スケーラブルでコスト効果の高いクラウドソリューションを構築。データのセキュリティと可用性を最大限に高めます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-group service-under">
+                                <div class="service-content">
+                                    <div class="service-number">04</div>
+                                    <h4>AI/機械学習ソリューション</h4>
+                                    <p>
+                                        ビジネスデータを活用して、AIと機械学習による予測分析や自動化を導入。競争力を強化し、ビジネスの未来を予測します。
+                                    </p>
+                                </div>
+                                <div class="service-content center">
+                                    <div class="service-number">05</div>
+                                    <h4>データベース管理</h4>
+                                    <p>
+                                        信頼性が高く、パフォーマンスに優れたデータベース管理サービスを提供。データの整合性と安全性を確保し、ビジネスの意思決定をサポートします。
+                                    </p>
+                                </div>
+                                <div class="service-content right">
+                                    <div class="service-number">06</div>
+                                    <h4>サイバーセキュリティ</h4>
+                                    <p>
+                                        企業のデジタル資産を保護するための包括的なサイバーセキュリティ対策を提供。不正アクセスやデータ漏洩からシステムを守ります。
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature-content flexibility">
-                            <img src="images/feature2.png" alt="">
-                            <div class="feature-group">
-                                <p class="feature-number">FEATURE 02</p>
-                                <div class="feature-text">
-                                    <div class="feature-title">
-                                        <p>#2</p>
-                                        <h5>柔軟性</h5>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 導入事例 -->
+            <section class="casestudy" id="casestudy">
+                <div class="casestudy-wrapper">
+                    <div class="casestudy-inner">
+                        <div class="heading wrapper">
+                            <h2>CASE STUDY</h2>
+                            <h3>導入事例 - 成功へ軌跡</h3>
+                        </div>
+                        <div class="scroll">
+                            <p>scroll</p>
+                            <img src="images/case-study-scroll-icon.svg" alt="">
+                        </div>
+                        <div class="casestudy-container">
+                            <div class="casestudy-content">
+                                <img src="images/casestudy-img1.png" alt="">
+                                <div class="icon-title">
+                                    <img src="images/casestudy-icon1.png" alt="">
+                                    <h4>業務プロセスの効率化</h4>
+                                </div>
+                                <div class="casestudy-group">
+                                    <div class="casestudy-item">
+                                        <h5 class="assignment">課題</h5>
+                                        <p>複数の業務システムが分散しており、データの統合が困難。</p>
                                     </div>
-                                    <p>
-                                        SyncWaveでは、どんなに複雑なプロジェクトでも、柔軟なアプローチで対応します。クライアントのニーズを深く理解し、その期待を超える成果を約束します。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-content reliability">
-                            <img src="images/feature3.png" alt="">
-                            <div class="feature-group">
-                                <p class="feature-number">FEATURE 03</p>
-                                <div class="feature-text">
-                                    <div class="feature-title">
-                                        <p>#3</p>
-                                        <h5>信頼性</h5>
+                                    <div class="casestudy-item">
+                                        <h5 class="solution">解決</h5>
+                                        <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
                                     </div>
-                                    <p>
-                                        私たちが手掛けたプロジェクトの成功は、クライアントとの深い信頼関係によって支えられています。プロジェクト完了後も、長期的なパートナーシップを築き続けています。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 選ばれる理由 -->
-        <section class="reason" id="reason">
-            <div class="wrapper">
-                <div class="inner">
-                    <div class="heading">
-                        <h2>REASON</h2>
-                        <h3>SyncWaveが選ばれる理由</h3>
-                    </div>
-                    <div class="reason-container">
-                        <div class="reason-content custom">
-                            <img src="images/reason-custom.png" alt="">
-                            <h4>カスタムソリューション</h4>
-                            <p>
-                                クライアントのビジネス課題に応じた、完全にカスタマイズされたソリューションを提供し、業務の効率化や収益の最大化を実現します。
-                            </p>
-                        </div>
-                        <div class="reason-content responsive">
-                            <img src="images/reason-responsive.png" alt="">
-                            <h4>多業界対応力</h4>
-                            <p>
-                                製造業から金融業、ヘルスケアまで、幅広い業界のプロジェクト経験を活かし、業界特有のニーズに応じたソリューションを提供します。
-                            </p>
-                        </div>
-                        <div class="reason-content support">
-                            <img src="images/reason-support.png" alt="">
-                            <h4>アフターサポート</h4>
-                            <p>
-                                導入後の運用サポートや定期的なメンテナンスを通じて、クライアントが安心してビジネスを進められる環境を提供します。
-                            </p>
-                        </div>
-                    </div>
-                    <img class="reason-img" src="images/reason-img.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- サービス -->
-        <section class="service" id="service">
-            <div class="wrapper">
-                <div class="inner">
-                    <div class="heading">
-                        <h2>SERVICE</h2>
-                        <h3>私たちが提供するサービス</h3>
-                    </div>
-                    <div class="service-container">
-                        <div class="service-group">
-                            <div class="service-content">
-                                <div class="service-number">01</div>
-                                <h4>Webアプリケーション</h4>
-                                <p>
-                                    企業の業務プロセスを最適化し、効率を高めるためのカスタムWebアプリケーションを提供します。使いやすさと拡張性を両立させたアプリケーションで、ビジネスの成長をサポートします。
-                                </p>
-                            </div>
-                            <div class="service-content">
-                                <div class="service-number">04</div>
-                                <h4>AI/機械学習ソリューション</h4>
-                                <p>
-                                    ビジネスデータを活用して、AIと機械学習による予測分析や自動化を導入。競争力を強化し、ビジネスの未来を予測します。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service-group center">
-                            <div class="service-content">
-                                <div class="service-number">02</div>
-                                <h4>モバイルアプリ</h4>
-                                <p>
-                                    モバイルファーストの時代に対応し、iOSおよびAndroid向けの高機能で直感的なモバイルアプリを開発。ユーザーエクスペリエンスを最優先に考えた設計です。
-                                </p>
-                            </div>
-                            <div class="service-content">
-                                <div class="service-number">05</div>
-                                <h4>データベース管理</h4>
-                                <p>
-                                    信頼性が高く、パフォーマンスに優れたデータベース管理サービスを提供。データの整合性と安全性を確保し、ビジネスの意思決定をサポートします。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service-group right">
-                            <div class="service-content">
-                                <div class="service-number">03</div>
-                                <h4>クラウドソリューション</h4>
-                                <p>
-                                    AWS、Azure、Google Cloudを活用し、スケーラブルでコスト効果の高いクラウドソリューションを構築。データのセキュリティと可用性を最大限に高めます。
-                                </p>
-                            </div>
-                            <div class="service-content">
-                                <div class="service-number">06</div>
-                                <h4>サイバーセキュリティ</h4>
-                                <p>
-                                    企業のデジタル資産を保護するための包括的なサイバーセキュリティ対策を提供。不正アクセスやデータ漏洩からシステムを守ります。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 導入事例 -->
-        <section class="casestudy" id="casestudy">
-            <div class="casestudy-wrapper">
-                <div class="casestudy-inner">
-                    <div class="heading wrapper">
-                        <h2>CASE STUDY</h2>
-                        <h3>導入事例 - 成功へ軌跡</h3>
-                    </div>
-                    <div class="scroll">
-                        <p>scroll</p>
-                        <img src="images/case-study-scroll-icon.svg" alt="">
-                    </div>
-                    <div class="casestudy-container">
-                        <!-- <img src="images/casestudy-white-gradation.png" alt=""> -->
-                        <div class="casestudy-content">
-                            <img src="images/casestudy-img1.png" alt="">
-                            <div class="icon-title">
-                                <img src="images/casestudy-icon1.png" alt="">
-                                <h4>業務プロセスの効率化</h4>
-                            </div>
-                            <div class="casestudy-group">
-                                <div class="casestudy-item">
-                                    <h5 class="assignment">課題</h5>
-                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="solution">解決</h5>
-                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="results">成果</h5>
-                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="casestudy-content">
-                            <img src="images/casestudy-img2.png" alt="">
-                            <div class="icon-title">
-                                <img src="images/casestudy-icon2.png" alt="">
-                                <h4>グローバルECサイト構築</h4>
-                            </div>
-                            <div class="casestudy-group">
-                                <div class="casestudy-item">
-                                    <h5 class="assignment">課題</h5>
-                                    <p>既存のECサイトが海外市場に対応しておらず、拡張が必要。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="solution">解決</h5>
-                                    <p>多言語対応のECサイトをゼロから設計し、グローバル展開を支援。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="results">成果</h5>
-                                    <p>海外売上が50%増加し、顧客層の拡大に成功。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="casestudy-content">
-                            <img src="images/casestudy-img3.png" alt="">
-                            <div class="icon-title">
-                                <img src="images/casestudy-icon3.png" alt="">
-                                <h4>モバイルアプリの再設計</h4>
-                            </div>
-                            <div class="casestudy-group">
-                                <div class="casestudy-item">
-                                    <h5 class="assignment">課題</h5>
-                                    <p>既存のアプリが使いにくく、ユーザー離脱率が高い。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="solution">解決</h5>
-                                    <p>UI/UXの全面的な見直しと機能改善を実施。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="results">成果</h5>
-                                    <p>ユーザーエンゲージメントが40%向上、アプリのレビュー評価が4.7に上昇。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="casestudy-content">
-                            <img src="images/casestudy-img4.png" alt="">
-                            <div class="icon-title">
-                                <img src="images/casestudy-icon4.png" alt="">
-                                <h4>業務プロセスの効率化</h4>
-                            </div>
-                            <div class="casestudy-group">
-                                <div class="casestudy-item">
-                                    <h5 class="assignment">課題</h5>
-                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="solution">解決</h5>
-                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="results">成果</h5>
-                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="casestudy-content">
-                            <img src="images/casestudy-img5.png" alt="">
-                            <div class="icon-title">
-                                <img src="images/casestudy-icon5.png" alt="">
-                                <h4>業務プロセスの効率化</h4>
-                            </div>
-                            <div class="casestudy-group">
-                                <div class="casestudy-item">
-                                    <h5 class="assignment">課題</h5>
-                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="solution">解決</h5>
-                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="results">成果</h5>
-                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="casestudy-content">
-                            <img src="images/casestudy-img6.png" alt="">
-                            <div class="icon-title">
-                                <img src="images/casestudy-icon6.png" alt="">
-                                <h4>業務プロセスの効率化</h4>
-                            </div>
-                            <div class="casestudy-group">
-                                <div class="casestudy-item">
-                                    <h5 class="assignment">課題</h5>
-                                    <p>複数の業務システムが分散しており、データの統合が困難。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="solution">解決</h5>
-                                    <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
-                                </div>
-                                <div class="casestudy-item">
-                                    <h5 class="results">成果</h5>
-                                    <p>業務効率が30%向上、ミスの削減に成功。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 主要取引先 -->
-        <section class="clients" id="clients">
-            <div class="wrapper">
-                <div class="inner">
-                    <div class="heading">
-                        <h2>CLIENTS</h2>
-                        <h3>主要取引先</h3>
-                    </div>
-                    <div class="clients-container">
-                        <ul class="clients-list">
-                            <li class="clients-itme"><img src="images/clients-logo1.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo2.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo3.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo4.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo5.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo6.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo7.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo8.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo9.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo10.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo11.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo12.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo13.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo14.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo15.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo16.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo17.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo18.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo19.png" alt=""></li>
-                            <li class="clients-itme"><img src="images/clients-logo20.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 最新情報 -->
-        <section class="topics" id="topics">
-            <div class="wrapper">
-                <div class="inner">
-                    <div class="heading">
-                        <h2>TOPICS</h2>
-                        <h3>最新情報 - 今注目のトピックス</h3>
-                    </div>
-                    <div class="topics-container">
-                        <div class="topics-content">
-                            <div class="topics-date">
-                                <time>2025.03.22</time>
-                                <p class="press-release">プレスリリース</p>
-                            </div>
-                            <img src="images/topics1.png" alt="">
-                            <h4>SyncWaveが新たなAIソリューションをリリース</h4>
-                        </div>
-                        <div class="topics-content">
-                            <div class="topics-date">
-                                <time>2025.03.21</time>
-                                <p class="blog">ブログ</p>
-                            </div>
-                            <img src="images/topics2.png" alt="">
-                            <h4>業界初！SyncWave、最先端のクラウドセキュリティシステムを導入</h4>
-                        </div>
-                        <div class="topics-content">
-                            <div class="topics-date">
-                                <time>2025.03.20</time>
-                                <p class="news">ニュース</p>
-                            </div>
-                            <img src="images/topics3.png" alt="">
-                            <h4>SyncWaveがXYZ社との大型プロジェクトを完了</h4>
-                        </div>
-                        <div class="topics-content">
-                            <div class="topics-date">
-                                <time>2025.03.19</time>
-                                <p class="blog">ブログ</p>
-                            </div>
-                            <img src="images/topics4.png" alt="">
-                            <h4>新しいオフィスを開設し、さらなる成長を目指す</h4>
-                        </div>
-                        <div class="topics-content">
-                            <div class="topics-date">
-                                <time>2025.03.18</time>
-                                <p class="blog">ブログ</p>
-                            </div>
-                            <img src="images/topics5.png" alt="">
-                            <h4>CEOインタビュー - SyncWaveの未来とビジョン</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- お問い合わせフォーム -->
-        <section class="contact-form" id="contact-form">
-            <div class="wrapper">
-                <div class="inner">
-                    <div class="heading">
-                        <h2>CONTACT</h2>
-                        <h3>お問い合わせフォーム</h3>
-                    </div>
-                    <div class="contact-flex">
-                        <div class="overview">
-                            <img src="images/contact-img.png" alt="">
-                            <p>
-                                SyncWaveのサービスに関するご質問やご相談は、以下のフォームからお気軽にお問い合わせください。担当者が迅速に対応いたします。
-                            </p>
-                        </div>
-                        <div class="form">
-                            <div class="form-inner">
-                                <p>※ 必須</p>
-                                <form>
-                                    <div class="form-container">
-                                        <div class="form-content">
-                                            <p class="required">お名前</p>
-                                            <label for="name" class="name">
-                                                <input type="text" name="name" class="form-text" placeholder="姓" required>
-                                                <input type="text" name="name" class="form-text" placeholder="名" required>
-                                            </label>
-                                        </div>
-                                        <div class="form-content">
-                                            <p class="required">貴社名</p>
-                                            <label for="company">
-                                                <input type="text" name="company" class="form-text" placeholder="株式会社SyncWave" required>
-                                            </label>
-                                        </div>
-                                        <div class="form-content">
-                                            <p class="required">メールアドレス</p>
-                                            <label for="email">
-                                                <input type="email" name="email" class="form-text" placeholder="company@example.co.jp" required>
-                                            </label>
-                                        </div>
-                                        <div class="form-content">
-                                            <p>電話番号</p>
-                                            <label for="tel">
-                                                <input type="tel" name="tel" class="form-text" placeholder="000-0000-0000" required>
-                                            </label>
-                                        </div>
-                                        <div class="form-content">
-                                            <p class="required">お問い合わせ内容</p>
-                                            <textarea name="textarea"></textarea>
-                                        </div>
-                                        <div class="submit-btn">
-                                            <button type="submit">お問い合わせを送信</button>
-                                        </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="results">成果</h5>
+                                        <p>業務効率が30%向上、ミスの削減に成功。</p>
                                     </div>
-                                </form>
+                                </div>
+                            </div>
+                            <div class="casestudy-content">
+                                <img src="images/casestudy-img2.png" alt="">
+                                <div class="icon-title">
+                                    <img src="images/casestudy-icon2.png" alt="">
+                                    <h4>グローバルECサイト構築</h4>
+                                </div>
+                                <div class="casestudy-group">
+                                    <div class="casestudy-item">
+                                        <h5 class="assignment">課題</h5>
+                                        <p>既存のECサイトが海外市場に対応しておらず、拡張が必要。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="solution">解決</h5>
+                                        <p>多言語対応のECサイトをゼロから設計し、グローバル展開を支援。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="results">成果</h5>
+                                        <p>海外売上が50%増加し、顧客層の拡大に成功。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="casestudy-content">
+                                <img src="images/casestudy-img3.png" alt="">
+                                <div class="icon-title">
+                                    <img src="images/casestudy-icon3.png" alt="">
+                                    <h4>モバイルアプリの再設計</h4>
+                                </div>
+                                <div class="casestudy-group">
+                                    <div class="casestudy-item">
+                                        <h5 class="assignment">課題</h5>
+                                        <p>既存のアプリが使いにくく、ユーザー離脱率が高い。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="solution">解決</h5>
+                                        <p>UI/UXの全面的な見直しと機能改善を実施。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="results">成果</h5>
+                                        <p>ユーザーエンゲージメントが40%向上、アプリのレビュー評価が4.7に上昇。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="casestudy-content">
+                                <img src="images/casestudy-img4.png" alt="">
+                                <div class="icon-title">
+                                    <img src="images/casestudy-icon4.png" alt="">
+                                    <h4>業務プロセスの効率化</h4>
+                                </div>
+                                <div class="casestudy-group">
+                                    <div class="casestudy-item">
+                                        <h5 class="assignment">課題</h5>
+                                        <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="solution">解決</h5>
+                                        <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="results">成果</h5>
+                                        <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="casestudy-content">
+                                <img src="images/casestudy-img5.png" alt="">
+                                <div class="icon-title">
+                                    <img src="images/casestudy-icon5.png" alt="">
+                                    <h4>業務プロセスの効率化</h4>
+                                </div>
+                                <div class="casestudy-group">
+                                    <div class="casestudy-item">
+                                        <h5 class="assignment">課題</h5>
+                                        <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="solution">解決</h5>
+                                        <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="results">成果</h5>
+                                        <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="casestudy-content">
+                                <img src="images/casestudy-img6.png" alt="">
+                                <div class="icon-title">
+                                    <img src="images/casestudy-icon6.png" alt="">
+                                    <h4>業務プロセスの効率化</h4>
+                                </div>
+                                <div class="casestudy-group">
+                                    <div class="casestudy-item">
+                                        <h5 class="assignment">課題</h5>
+                                        <p>複数の業務システムが分散しており、データの統合が困難。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="solution">解決</h5>
+                                        <p>カスタムCRMシステムの開発により、全業務プロセスを一元管理可能に。</p>
+                                    </div>
+                                    <div class="casestudy-item">
+                                        <h5 class="results">成果</h5>
+                                        <p>業務効率が30%向上、ミスの削減に成功。</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 会社概要 -->
-        <section class="company" id="company">
-            <div class="wrapper">
-                <div class="inner">
-                    <div class="heading">
-                        <h2>COMPANY</h2>
-                        <h3>会社概要 - SyncWaveについて</h3>
-                    </div>
-                    <div class="company-container">
-                        <img src="images/company-img.png" alt="">
-                        <table>
-                            <tr>
-                                <th>設立年</th>
-                                <td>2010年設立。<br>以来、テクノロジーの進化と共に成長を続けています。</td>
-                            </tr>
-                            <tr>
-                                <th>所在地</th>
-                                <td>東京都渋谷区◯◯町1-2-3</td>
-                            </tr>
-                            <tr>
-                                <th>代表者</th>
-                                <td>代表取締役社長　山田太郎</td>
-                            </tr>
-                            <tr>
-                                <th>従業員数</th>
-                                <td>約150名<br>（2024年）</td>
-                            </tr>
-                            <tr>
-                                <th>事業内容</th>
-                                <td>
-                                    Webアプリケーション<br>
-                                    モバイルアプリ<br>
-                                    クラウドソリューション<br>
-                                    AI/機械学習ソリューション<br>
-                                    データベース管理<br>
-                                    サイバーセキュリティ
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>ミッション</th>
-                                <td>クライアントのビジネスに革新をもたらし、持続可能な成長を実現することを目指しています。</td>
-                            </tr>
-                            <tr>
-                                <th>ビジョン</th>
-                                <td>技術革新を通じて、社会に貢献し、次世代のビジネスを支えるリーダーとなる。</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer">
-            <div class="wrapper">
-                <div class="footer-inner">
-                    <h2>
-                        <a href="#" class="footer-logo">SyncWave</a>
-                    </h2>
-                    <div class="footer-about">
-                        <p>東京都渋谷区◯◯町1-2-3</p>
-                        <p>000-0000-0000</p>
-                        <p>info@syncwave.co.jp</p>
-                        <div class="footer-sns">
-                            <a href=""><img src="images/footer-linkedin.png" alt=""></a>
-                            <a href=""><img src="images/footer-facebook.png" alt=""></a>
-                            <a href=""><img src="images/footer-x.png" alt=""></a>
+            <!-- 主要取引先 -->
+            <section class="clients" id="clients">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>CLIENTS</h2>
+                            <h3>主要取引先</h3>
+                        </div>
+                        <div class="clients-container">
+                            <ul class="clients-list">
+                                <li class="clients-itme"><img src="images/clients-logo1.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo2.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo3.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo4.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo5.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo6.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo7.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo8.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo9.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo10.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo11.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo12.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo13.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo14.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo15.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo16.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo17.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo18.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo19.png" alt=""></li>
+                                <li class="clients-itme"><img src="images/clients-logo20.png" alt=""></li>
+                            </ul>
                         </div>
                     </div>
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#feature">SyncWaveの特徴</a></li>
-                            <li><a href="#reason">選ばれる理由</a></li>
-                            <li><a href="#service">事業内容</a></li>
-                            <li><a href="#casestudy">導入事例</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#clients">パートナー企業</a></li>
-                            <li><a href="#topics">最新情報</a></li>
-                            <li><a href="#contact-form">お問い合わせ</a></li>
-                            <li><a href="#company">会社情報</a></li>
-                        </ul>
-                    </nav>
-                    <div class="other">
-                        <div><a href="">プライバシーポリシー</a></div>
-                        <div><a href="">利用規約</a></div>
+                </div>
+            </section>
+
+            <!-- 最新情報 -->
+            <section class="topics" id="topics">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>TOPICS</h2>
+                            <h3>最新情報 - 今注目のトピックス</h3>
+                        </div>
+                        <div class="topics-container">
+                            <div class="topics-content">
+                                <div class="topics-date">
+                                    <time>2025.03.22</time>
+                                    <p class="press-release">プレスリリース</p>
+                                </div>
+                                <img src="images/topics1.png" alt="">
+                                <h4>SyncWaveが新たなAIソリューションをリリース</h4>
+                            </div>
+                            <div class="topics-content">
+                                <div class="topics-date">
+                                    <time>2025.03.21</time>
+                                    <p class="blog">ブログ</p>
+                                </div>
+                                <img src="images/topics2.png" alt="">
+                                <h4>業界初！SyncWave、最先端のクラウドセキュリティシステムを導入</h4>
+                            </div>
+                            <div class="topics-content">
+                                <div class="topics-date">
+                                    <time>2025.03.20</time>
+                                    <p class="news">ニュース</p>
+                                </div>
+                                <img src="images/topics3.png" alt="">
+                                <h4>SyncWaveがXYZ社との大型プロジェクトを完了</h4>
+                            </div>
+                            <div class="topics-content">
+                                <div class="topics-date">
+                                    <time>2025.03.19</time>
+                                    <p class="blog">ブログ</p>
+                                </div>
+                                <img src="images/topics4.png" alt="">
+                                <h4>新しいオフィスを開設し、さらなる成長を目指す</h4>
+                            </div>
+                            <div class="topics-content">
+                                <div class="topics-date">
+                                    <time>2025.03.18</time>
+                                    <p class="blog">ブログ</p>
+                                </div>
+                                <img src="images/topics5.png" alt="">
+                                <h4>CEOインタビュー - SyncWaveの未来とビジョン</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="copyright">©︎ 2025 SyncWave All Rights Reserved</p>
+            </section>
+
+            <!-- お問い合わせフォーム -->
+            <section class="contact-form" id="contact-form">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>CONTACT</h2>
+                            <h3>お問い合わせフォーム</h3>
+                        </div>
+                        <div class="contact-flex">
+                            <div class="overview">
+                                <img src="images/contact-img.png" alt="">
+                                <p>
+                                    SyncWaveのサービスに関するご質問やご相談は、以下のフォームからお気軽にお問い合わせください。担当者が迅速に対応いたします。
+                                </p>
+                            </div>
+                            <div class="form">
+                                <div class="form-inner">
+                                    <p>※ 必須</p>
+                                    <form>
+                                        <div class="form-container">
+                                            <div class="form-content">
+                                                <p class="required">お名前</p>
+                                                <label for="name" class="name">
+                                                    <input type="text" name="name" class="form-text" placeholder="姓" required>
+                                                    <input type="text" name="name" class="form-text" placeholder="名" required>
+                                                </label>
+                                            </div>
+                                            <div class="form-content">
+                                                <p class="required">貴社名</p>
+                                                <label for="company">
+                                                    <input type="text" name="company" class="form-text" placeholder="株式会社SyncWave" required>
+                                                </label>
+                                            </div>
+                                            <div class="form-content">
+                                                <p class="required">メールアドレス</p>
+                                                <label for="email">
+                                                    <input type="email" name="email" class="form-text" placeholder="company@example.co.jp" required>
+                                                </label>
+                                            </div>
+                                            <div class="form-content">
+                                                <p>電話番号</p>
+                                                <label for="tel">
+                                                    <input type="tel" name="tel" class="form-text" placeholder="000-0000-0000" required>
+                                                </label>
+                                            </div>
+                                            <div class="form-content">
+                                                <p class="required">お問い合わせ内容</p>
+                                                <textarea name="textarea"></textarea>
+                                            </div>
+                                            <div class="submit-btn">
+                                                <button type="submit">お問い合わせを送信</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 会社概要 -->
+            <section class="company" id="company">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="heading">
+                            <h2>COMPANY</h2>
+                            <h3>会社概要 - SyncWaveについて</h3>
+                        </div>
+                        <div class="company-container">
+                            <img src="images/company-img.png" alt="">
+                            <table>
+                                <tr>
+                                    <th>設立年</th>
+                                    <td>2010年設立。<br>以来、テクノロジーの進化と共に成長を続けています。</td>
+                                </tr>
+                                <tr>
+                                    <th>所在地</th>
+                                    <td>東京都渋谷区◯◯町1-2-3</td>
+                                </tr>
+                                <tr>
+                                    <th>代表者</th>
+                                    <td>代表取締役社長　山田太郎</td>
+                                </tr>
+                                <tr>
+                                    <th>従業員数</th>
+                                    <td>約150名<br>（2024年）</td>
+                                </tr>
+                                <tr>
+                                    <th>事業内容</th>
+                                    <td>
+                                        Webアプリケーション<br>
+                                        モバイルアプリ<br>
+                                        クラウドソリューション<br>
+                                        AI/機械学習ソリューション<br>
+                                        データベース管理<br>
+                                        サイバーセキュリティ
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>ミッション</th>
+                                    <td>クライアントのビジネスに革新をもたらし、持続可能な成長を実現することを目指しています。</td>
+                                </tr>
+                                <tr>
+                                    <th>ビジョン</th>
+                                    <td>技術革新を通じて、社会に貢献し、次世代のビジネスを支えるリーダーとなる。</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer-inner">
+                        <h2>
+                            <a href="#" class="footer-logo">SyncWave</a>
+                        </h2>
+                        <div class="footer-about">
+                            <p>東京都渋谷区◯◯町1-2-3</p>
+                            <p>000-0000-0000</p>
+                            <p>info@syncwave.co.jp</p>
+                            <div class="footer-sns">
+                                <a href=""><img src="images/footer-linkedin.png" alt=""></a>
+                                <a href=""><img src="images/footer-facebook.png" alt=""></a>
+                                <a href=""><img src="images/footer-x.png" alt=""></a>
+                            </div>
+                        </div>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#feature">SyncWaveの特徴</a></li>
+                                <li><a href="#reason">選ばれる理由</a></li>
+                                <li><a href="#service">事業内容</a></li>
+                                <li><a href="#casestudy">導入事例</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#clients">パートナー企業</a></li>
+                                <li><a href="#topics">最新情報</a></li>
+                                <li><a href="#contact-form">お問い合わせ</a></li>
+                                <li><a href="#company">会社情報</a></li>
+                            </ul>
+                        </nav>
+                        <div class="other">
+                            <div><a href="">プライバシーポリシー</a></div>
+                            <div><a href="">利用規約</a></div>
+                        </div>
+                    </div>
+                    <p class="copyright">©︎ 2025 SyncWave All Rights Reserved</p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script src="./js/main.js"></script>
+        </footer>
+
+        <script src="./js/main.js"></script>
+    </div>
 </body>
 
 </html>

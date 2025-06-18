@@ -14,10 +14,17 @@ $(function () {
 
 $('.casestudy-container').slick({
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     infinite: true,
     initialSlide: 1,
     slidesToShow: 3,
     slidesToScroll: 1,
-    rows: 1
+    rows: 1,
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            autoplay: false,
+            slidesToShow: 1,
+        }
+    }]
 });

@@ -7,6 +7,10 @@ body {
     color: #444;
 }
 
+.wrap {
+    overflow-x: hidden;
+}
+
 :root {
     --white: #fff;
     --blue: #1C48C1;
@@ -73,6 +77,17 @@ ul, li {
         font-size: 21px;
         font-weight: 400;
     }
+}
+
+#feature,
+#reason,
+#service,
+#casestudy,
+#clients,
+#topics,
+#contact-form,
+#company {
+    scroll-margin-top: 80px;
 }
 
 
@@ -171,6 +186,13 @@ h1 {
     }
 }
 
+/* ナビゲーションメニュー */
+.navigation-container {
+    display: none;
+}
+
+
+
 
 
 /* ハンバーガーメニュー */
@@ -236,9 +258,7 @@ h1 {
     display: block;
     font-family: "Oswald", sans-serif;
     letter-spacing: 0.3em;
-    background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--white);
 }
 
 .hamburger.active span:nth-child(1) {
@@ -513,19 +533,25 @@ h1 {
 }
 
 .service-container {
-    display: flex;
     padding-bottom: 50px;
+}
+
+.service-group {
+    display: flex;
 
     .center {
-        margin-top: 200px;
-        margin-left: -50px;
+        margin: 200px 0 0 -50px;
     }
 
     .right {
-        margin-top: 400px;
-        margin-left: -50px;
+        margin: 400px 0 0 -50px;
     }
 }
+
+.service-under {
+    margin-top: -350px;
+}
+
 
 .service-content {
     background-color: var(--white);
@@ -568,6 +594,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: right;
+    margin-bottom: 15px;
     padding-right: 15px;
     display: none;
 
@@ -580,7 +607,6 @@ h1 {
     display: flex;
     margin-bottom: 50px;
     position: relative;
-    /* overflow: scroll; */
 
     &::-webkit-scrollbar {
         display: none;
@@ -657,6 +683,10 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px 0;
+
+    li {
+        width: 20%;
+    }
 }
 
 
@@ -898,6 +928,25 @@ h2 {
 
         a {
             color: var(--white);
+            transition-duration: .4s;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: var(--white);
+                bottom: -1px;
+                transform: scale(0, 1);
+                transform-origin: center top;
+                transition: transform 0.3s;
+            }
+
+            &:hover::after {
+                transform: scale(1, 1);
+            }
         }
     }
 }
@@ -909,12 +958,32 @@ h2 {
 
         a {
             color: var(--white);
+            transition-duration: .4s;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: var(--white);
+                bottom: -1px;
+                transform: scale(0, 1);
+                transform-origin: center top;
+                transition: transform 0.3s;
+            }
+
+            &:hover::after {
+                transform: scale(1, 1);
+            }
         }
     }
 }
 
 .copyright {
     color: var(--white);
+    font-size: 12px;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 200;
@@ -988,7 +1057,97 @@ h2 {
         flex-direction: column;
     }
 
+    /* ナビゲーションメニュー */
+    .navigation-container {
+        position: fixed;
+        right: 0;
+        display: block;
+        background-color: var(--white);
+        padding-top: 100px;
+        width: 100%;
+        height: 100vh;
+        z-index: 90;
+    }
+
+    /* アニメーション前のメニューの状態 */
+    .navigation-container{
+        pointer-events: none;
+        opacity: 0;
+        transform-origin: center;
+        transform: scale(.5);
+        transition: all .3s ease;
+    }
+
+    /* アニメーション後のメニューの状態 */
+    .navigation-container.active{
+        pointer-events: auto;
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    .nav-list-sp {
+
+        .nav-item {
+            width: 50%;
+            margin: 0 auto;
+
+            a {
+                font-size: 18px;
+                font-family: "YuMincho", serif;
+                background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition-duration: .4s;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
+                    bottom: -1px;
+                    transform: scale(0, 1);
+                    transform-origin: center top;
+                    transition: transform 0.3s;
+                }
+
+                &:hover::after {
+                    transform: scale(1, 1);
+                }
+            }
+        }
+    }
+
+    /* ソーシャルメディアリンク */
+    .nav-sns {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1013,9 +1172,12 @@ SP
         flex-direction: column;
         gap: 0px;
         align-items: flex-start;
+        margin-bottom: 30px;
 
         h2 {
             font-size: 45px;
+            line-height: 1em;
+            margin-bottom: 0;
         }
 
         h3 {
@@ -1027,19 +1189,24 @@ SP
 
     /* --------------------------------メインビジュアル */
     .main-visual-content {
+        padding: 50px 0 0;
 
         h2 {
             margin-bottom: 10px;
+            letter-spacing: -0.05em;
         }
     }
 
     .mv-btn {
         flex-direction: column;
-        width: fit-content;
+        width: 100%;
         margin: 0 auto;
 
-        .contact {
+        .contact,
+        .detail {
+            width: 240px;
             margin: 0 auto;
+            justify-content: center;
         }
     }
 
@@ -1051,6 +1218,13 @@ SP
 
     .back-text {
         display: none;
+    }
+
+    .feature-content {
+
+        img {
+            width: 100%;
+        }
     }
 
     .flexibility {
@@ -1069,6 +1243,7 @@ SP
     }
 
 
+
     /* --------------------------------選ばれる理由 */
     .reason-container {
         flex-direction: column;
@@ -1077,7 +1252,11 @@ SP
     }
 
     .reason-content {
-        padding: 33px 50px;
+        width: 345px;
+        min-width: 345px;
+        height: 345px;
+        min-height: 345px;
+        margin: 0 auto;
     }
 
     .custom {
@@ -1091,7 +1270,181 @@ SP
     .reason-img {
         display: block;
         margin: auto;
-        padding-bottom: 50px;
+        padding-bottom: 15px;
     }
+
+
+    /* --------------------------------サービス */
+    .service-group {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+        .center {
+            margin: 0 auto;
+        }
+
+        .right {
+            margin: 0 auto;
+        }
+    }
+
+    .service-above {
+        margin-bottom: 50px;
+    }
+
+    .service-under {
+        margin-top: 0;
+    }
+
+
+    .service-content {
+        width: 100%;
+        height: 330px;
+        margin: 0 auto;
+        padding-top: 15px;
+
+        .service-number {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 21px;
+        }
+
+        p {
+            padding: 0 50px;
+        }
+    }
+
+
+
+    /* --------------------------------導入事例 */
+    .casestudy-wrapper {
+        padding: 0 15px;
+    }
+
+
+
+    /* --------------------------------主要取引先 */
+    .clients-list {
+
+        li {
+            width: 25%;
+        }
+    }
+
+
+    /* --------------------------------最新情報 */
+    .topics {
+        padding-bottom: 1px;
+    }
+
+    .topics-content {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        border-bottom: 1px solid #DDDDDD;
+
+        h4 {
+            font-size: 16px;
+            width: 100%;
+            line-height: 1.8;
+        }
+    }
+
+
+    /* --------------------------------お問い合わせフォーム */
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .overview {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+
+    /* --------------------------------会社概要 */
+    .company-container {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
+
+
+    /* --------------------------------フッター */
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* フッターロゴ */
+    h2 {
+        margin-bottom: 30px;
+
+        .footer-logo {
+            font-size: 30px;
+        }
+    }
+
+    .footer-about {
+        margin-bottom: 30px;
+    }
+
+    .footer-sns {
+        justify-content: center;
+    }
+
+    .footer-nav {
+        justify-content: center;
+        border-left: 0px;
+        border-right: 0px;
+        margin: 30px 0;
+        padding: 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            display: inline-block;
+            width: 132px;
+            height: 1px;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);/*位置調整*/
+            background-color: #DDD;/*線の色*/
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            display: inline-block;
+            width: 132px;
+            height: 1px;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);/*位置調整*/
+            background-color: #DDD;/*線の色*/
+        }
+    }
+
+    .other {
+        margin-top: 30px;
+    }
+
+
+
+
+
+
 
 }
