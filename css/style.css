@@ -305,7 +305,7 @@ h1 {
     display: grid;
     place-content: center;
     text-align: center;
-    padding: 100px 0 0;
+    padding: 100px 0;
 
     h2 {
         background: linear-gradient(90deg, #1C46C0 0%, #18B1F4 100%);
@@ -458,7 +458,7 @@ h1 {
                 font-size: 16px;
             }
 
-            h5 {
+            h4 {
                 font-size: 21px;
                 border-bottom: 1px solid var(--white);
             }
