@@ -1,0 +1,37 @@
+$(function () {
+  // ハンバーガーボタンクリックで実行
+        $("#js-hamburger").click(function () {
+        $(this).toggleClass("active");
+        $("#js-nav").toggleClass("active");
+
+        // ナビゲーション展開時にスクロール制御
+        if ($("#js-nav").hasClass("active")) {
+            $("body").css("overflow", "hidden");
+        } else {
+            $("body").css("overflow", "");
+        }
+    });
+
+    // メニュー項目のクリック時にメニューを閉じる
+        $(".nav-item a").click(function () {
+        $("#js-hamburger").removeClass("active");
+        $("#js-nav").removeClass("active");
+    });
+});
+
+$('.casestudy-container').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    initialSlide: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    rows: 1,
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            autoplay: false,
+            slidesToShow: 1,
+        }
+    }]
+});
